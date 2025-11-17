@@ -10,10 +10,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val btnToScreen2: Button = findViewById(R.id.btn_to_screen2)
+        ///val btnToScreen2: Button = findViewById(R.id.btn_to_screen2)
+        val btnToInitialSetup: Button = findViewById(R.id.btn_to_initial_setup)
         val btnToScreen3: Button = findViewById(R.id.btn_to_screen3)
 
-        btnToScreen2.setOnClickListener {
+        ///btnToScreen2.setOnClickListener {
+        ///    val intent = Intent(this, Screen2Activity::class.java)
+        ///    startActivity(intent)
+        ///}
+
+        btnToInitialSetup.setOnClickListener {
             val intent = Intent(this, Screen2Activity::class.java)
             startActivity(intent)
         }
