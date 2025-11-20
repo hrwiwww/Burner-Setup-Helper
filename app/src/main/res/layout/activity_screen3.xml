@@ -13,14 +13,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
         android:layout_marginEnd="124dp"
-        android:text="Экран 3"
+        android:text="ввод данных с котла*"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/btn_to_initial_setup"
+        android:id="@+id/btn_to_pasport_of_object"
         android:layout_width="148dp"
         android:layout_height="64dp"
         android:layout_marginStart="16dp"
@@ -31,7 +31,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/btn_to_final_input"
+        android:id="@+id/btn_to_result_data"
         android:layout_width="148dp"
         android:layout_height="55dp"
         android:layout_marginEnd="12dp"

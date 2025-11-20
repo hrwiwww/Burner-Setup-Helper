@@ -21,6 +21,8 @@
         <activity android:name=".Screen3Activity" />
         <activity android:name=".Screen4Activity" />
         <activity android:name=".Screen5Activity" />
+        <activity android:name=".DbOfInfoActivity" />
+        <activity android:name=".HistoryActivity" />
 
     </application>
 

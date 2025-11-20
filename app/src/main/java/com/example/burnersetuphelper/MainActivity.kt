@@ -10,22 +10,22 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        ///val btnToScreen2: Button = findViewById(R.id.btn_to_screen2)
-        val btnToInitialSetup: Button = findViewById(R.id.btn_to_initial_setup)
-        val btnToScreen3: Button = findViewById(R.id.btn_to_screen3)
+        val btnToPasportOfObject: Button = findViewById(R.id.btn_to_pasport_of_object)
+        val btnToHistoryActivity: Button = findViewById(R.id.btn_to_history)
+        val btnToDbOfInfo: Button = findViewById(R.id.btn_to_db_info)
 
-        ///btnToScreen2.setOnClickListener {
-        ///    val intent = Intent(this, Screen2Activity::class.java)
-        ///    startActivity(intent)
-        ///}
+        btnToDbOfInfo.setOnClickListener {
+            val intent = Intent(this, DbOfInfoActivity::class.java)
+            startActivity(intent)
+        }
 
-        btnToInitialSetup.setOnClickListener {
+        btnToPasportOfObject.setOnClickListener {
             val intent = Intent(this, Screen2Activity::class.java)
             startActivity(intent)
         }
 
-        btnToScreen3.setOnClickListener {
-            val intent = Intent(this, Screen3Activity::class.java)
+        btnToHistoryActivity.setOnClickListener {
+            val intent = Intent(this, HistoryActivity::class.java)
             startActivity(intent)
         }
     }

@@ -11,9 +11,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="148dp"
-        android:text="Экран 2"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="72dp"
+        android:text="ввод данных объекта*"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -31,7 +31,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/btn_to_initial_input"
+        android:id="@+id/btn_to_input_data"
         android:layout_width="149dp"
         android:layout_height="96dp"
         android:layout_marginEnd="32dp"

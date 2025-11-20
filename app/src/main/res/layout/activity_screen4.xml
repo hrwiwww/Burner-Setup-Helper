@@ -13,13 +13,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="144dp"
-        android:text="Экран 4"
+        android:text="вывод расчётов*"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn_to_initial_input"
+        android:id="@+id/btn_to_input_data"
         android:layout_width="116dp"
         android:layout_height="70dp"
         android:layout_marginTop="28dp"
@@ -30,7 +30,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn_to_result"
+        android:id="@+id/btn_to_input_work_dots"
         android:layout_width="129dp"
         android:layout_height="68dp"
         android:layout_marginStart="232dp"

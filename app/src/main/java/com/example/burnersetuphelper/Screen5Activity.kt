@@ -10,16 +10,16 @@ class Screen5Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_screen5)
 
-        val btnToFinalInput: Button = findViewById(R.id.btn_to_final_input)
-        val btnToScreen4: Button = findViewById(R.id.btn_to_screen4)
+        val btnToResultData: Button = findViewById(R.id.btn_to_result_data)
+        val btnToEndAndSave: Button = findViewById(R.id.btn_to_end_and_save)
 
-        btnToFinalInput.setOnClickListener {
+        btnToResultData.setOnClickListener {
             val intent = Intent(this, Screen4Activity::class.java)
             startActivity(intent)
         }
 
-        btnToScreen4.setOnClickListener {
-            val intent = Intent(this, Screen4Activity::class.java)
+        btnToEndAndSave.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
     }
