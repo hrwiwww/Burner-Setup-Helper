@@ -5,16 +5,16 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
-class Screen5Activity : AppCompatActivity() {
+class DotsRequestActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_screen5)
+        setContentView(R.layout.activity_dots_request)
 
         val btnToResultData: Button = findViewById(R.id.btn_to_result_data)
         val btnToEndAndSave: Button = findViewById(R.id.btn_to_end_and_save)
 
         btnToResultData.setOnClickListener {
-            val intent = Intent(this, Screen4Activity::class.java)
+            val intent = Intent(this, DataResultActivity::class.java)
             startActivity(intent)
         }
 

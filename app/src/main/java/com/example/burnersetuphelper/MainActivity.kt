@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnToPasportOfObject.setOnClickListener {
-            val intent = Intent(this, Screen2Activity::class.java)
+            val intent = Intent(this, PasportInputActivity::class.java)
             startActivity(intent)
         }
 

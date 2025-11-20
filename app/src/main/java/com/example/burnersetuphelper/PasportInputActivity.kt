@@ -5,10 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
-class Screen2Activity : AppCompatActivity() {
+class PasportInputActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_screen2)
+        setContentView(R.layout.activity_pasport_input)
 
         val btnTohome: Button = findViewById(R.id.btn_to_home)
         val btnToInputData: Button = findViewById(R.id.btn_to_input_data)
@@ -19,7 +19,7 @@ class Screen2Activity : AppCompatActivity() {
         }
 
         btnToInputData.setOnClickListener {
-            val intent = Intent(this, Screen3Activity::class.java)
+            val intent = Intent(this, DataInputActivity::class.java)
             startActivity(intent)
         }
     }
