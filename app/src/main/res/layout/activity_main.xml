@@ -23,8 +23,8 @@
         android:id="@+id/btn_to_history"
         android:layout_width="128dp"
         android:layout_height="67dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="540dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="328dp"
         android:text="Перейти в историю*"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -45,11 +45,31 @@
         android:id="@+id/btn_to_db_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="108dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="20dp"
         android:text="база чертежей"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_calculer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="88dp"
+        android:text="конвертор величин"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_go_to_dots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="40dp"
+        android:text="ТОЧКИ 2.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

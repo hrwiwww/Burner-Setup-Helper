@@ -23,6 +23,7 @@
         <activity android:name=".DotsRequestActivity" />
         <activity android:name=".DbOfInfoActivity" />
         <activity android:name=".HistoryActivity" />
+        <activity android:name=".CalculerActivity" />
 
     </application>
 
