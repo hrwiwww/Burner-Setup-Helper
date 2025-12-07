@@ -8,24 +8,13 @@
     android:gravity="center"
     android:padding="16dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="124dp"
-        android:text="ввод данных с котла*"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
-
     <Button
         android:id="@+id/btn_to_pasport_of_object"
         android:layout_width="148dp"
         android:layout_height="64dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="88dp"
-        android:text="ввод первичных настроек"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="к тех карте"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
@@ -36,9 +25,199 @@
         android:layout_height="55dp"
         android:layout_marginEnd="12dp"
         android:layout_marginBottom="28dp"
-        android:text="финальный ввод"
+        android:text="расчитать"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="MissingConstraints" />
+    <ScrollView
+        android:layout_width="370dp"
+        android:layout_height="480dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textPsportDat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ввод данных для расчётов" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/pPowerOfBurner"
+                    android:layout_width="278dp"
+                    android:layout_height="wrap_content"
+                    android:text="Мощность котла кВт" />
+                <EditText
+                    android:id="@+id/edPowerOfBurner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/pKpdOfBurner"
+                    android:layout_width="278dp"
+                    android:layout_height="wrap_content"
+                    android:text="Кпд (предпологаемый) %" />
+                <EditText
+                    android:id="@+id/edKpdOfBurner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/pResistanceOfBurner"
+                    android:layout_width="278dp"
+                    android:layout_height="wrap_content"
+                    android:text="Сопротивление в камере сгорания мБар" />
+                <EditText
+                    android:id="@+id/edResistanceOfBurner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/pHeathOfBurn"
+                    android:layout_width="278dp"
+                    android:layout_height="wrap_content"
+                    android:text="Теплота сгорания кВтч\м3" />
+                <EditText
+                    android:id="@+id/edHeathOfBurn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/pPressureOfGas"
+                    android:layout_width="278dp"
+                    android:layout_height="wrap_content"
+                    android:text="Давление газа на счётчике мБар" />
+                <EditText
+                    android:id="@+id/edPressureOfGas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/pTemperatureOfGas"
+                    android:layout_width="278dp"
+                    android:layout_height="wrap_content"
+                    android:text="Температура газа на счётчике  С" />
+                <EditText
+                    android:id="@+id/edTemperatureOfGas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/pAltAboveSeaLevel"
+                    android:layout_width="278dp"
+                    android:layout_height="wrap_content"
+                    android:text="Высота над уровнем моря м" />
+                <EditText
+                    android:id="@+id/edAltAboveSeaLevel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/pAirPressureAboveSeaLevel"
+                    android:layout_width="278dp"
+                    android:layout_height="wrap_content"
+                    android:text="Среднегодовое давление вросдуха над уровнем моря мБар" />
+                <EditText
+                    android:id="@+id/edAirPressureAboveSeaLevel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/pPartLoad"
+                    android:layout_width="278dp"
+                    android:layout_height="wrap_content"
+                    android:text="Частичная нагрузка %" />
+                <EditText
+                    android:id="@+id/edPartLoad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="" />
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

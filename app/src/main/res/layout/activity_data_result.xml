@@ -8,22 +8,12 @@
     android:gravity="center"
     android:padding="16dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="144dp"
-        android:text="вывод расчётов*"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
         android:id="@+id/btn_to_input_data"
         android:layout_width="116dp"
         android:layout_height="70dp"
         android:layout_marginTop="28dp"
-        android:text="Назад"
+        android:text="назад"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.121"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,7 +25,7 @@
         android:layout_height="68dp"
         android:layout_marginStart="232dp"
         android:layout_marginBottom="8dp"
-        android:text="результат"
+        android:text="далее"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
