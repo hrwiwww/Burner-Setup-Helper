@@ -28,5 +28,263 @@
         android:text="далее"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+    <ScrollView
+        android:layout_width="370dp"
+        android:layout_height="480dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textPsportDat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ввод данных для расчётов" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lNormalV"
+                    android:layout_width="278dp"
+                    android:layout_height="32dp"
+                    android:text="Нормальный объём м3/ч" />
+
+                <TextView
+                    android:id="@+id/vNormalV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="13" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lWorkV"
+                    android:layout_width="278dp"
+                    android:layout_height="32dp"
+                    android:text="Рабочий объём м3/ч" />
+
+                <TextView
+                    android:id="@+id/vWorkV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="13" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lTimeOfChange"
+                    android:layout_width="278dp"
+                    android:layout_height="32dp"
+                    android:text="Время измерения при расходе газа 1 м3" />
+
+                <TextView
+                    android:id="@+id/vTimeOfChange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="13" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lRashod"
+                    android:layout_width="278dp"
+                    android:layout_height="32dp"
+                    android:text="Расход газа л/мин" />
+
+                <TextView
+                    android:id="@+id/vRashod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="13" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lPowerOfGas"
+                    android:layout_width="278dp"
+                    android:layout_height="32dp"
+                    android:text="Мощность горелки кВт" />
+
+                <TextView
+                    android:id="@+id/vPowerOfGas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="13" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lKoef"
+                    android:layout_width="278dp"
+                    android:layout_height="32dp"
+                    android:text="Коэффицент пересчёта" />
+
+                <TextView
+                    android:id="@+id/vKoef"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="13" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lPowerOfGasWithHeight"
+                    android:layout_width="278dp"
+                    android:layout_height="52dp"
+                    android:text="Мощность горелки с учётом высоты над уровнем моря кВт" />
+
+                <TextView
+                    android:id="@+id/vPowerOfGasWithHeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="13" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lProcentOfPower"
+                    android:layout_width="278dp"
+                    android:layout_height="32dp"
+                    android:text="Процент влияния высоты на мощность %" />
+
+                <TextView
+                    android:id="@+id/vProcentOfPower"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="13" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lPowerOfGasPart"
+                    android:layout_width="278dp"
+                    android:layout_height="52dp"
+                    android:text="Мощность горелки частичная нагрузка кВт" />
+
+                <TextView
+                    android:id="@+id/vPowerOfGasPart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="13" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lPowerOfGasPartWithHeight"
+                    android:layout_width="278dp"
+                    android:layout_height="52dp"
+                    android:text="Мощность горелки частичная нагрузка с учётом высоты над уровнем моря кВт" />
+
+                <TextView
+                    android:id="@+id/vPowerOfGasPartWithHeight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="13" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lWorkVPartPower"
+                    android:layout_width="278dp"
+                    android:layout_height="52dp"
+                    android:text="Рабочий объем при частичной нагрузке м3/ч" />
+
+                <TextView
+                    android:id="@+id/vWorkVPartPower"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="13" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lTimeOfChangePartPower"
+                    android:layout_width="278dp"
+                    android:layout_height="52dp"
+                    android:text="Время измерения при расходе газа 1 м3 при частичной нагрузке сек." />
+
+                <TextView
+                    android:id="@+id/vTimeOfChangePartPower"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="13" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/lRashodPartPower"
+                    android:layout_width="278dp"
+                    android:layout_height="52dp"
+                    android:text="Расход при частичной нагрузке л/мин" />
+
+                <TextView
+                    android:id="@+id/vRashodPartPower"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="13" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
